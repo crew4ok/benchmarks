@@ -1,17 +1,15 @@
 package benchmarks;
 
-import org.openjdk.jmh.annotations.GenerateMicroBenchmark;
-
-import java.util.Random;
+import org.openjdk.jmh.annotations.Benchmark;
 
 public class PrintingBenchmark {
 
-    @GenerateMicroBenchmark
+    @Benchmark
     public void printHash() {
         System.out.print("#");
     }
 
-    @GenerateMicroBenchmark
+    @Benchmark
     public void printB() {
         System.out.print("B");
     }

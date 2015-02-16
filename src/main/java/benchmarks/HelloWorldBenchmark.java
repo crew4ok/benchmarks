@@ -36,13 +36,13 @@ public class HelloWorldBenchmark {
         }
     }
 
-    @GenerateMicroBenchmark
+    @Benchmark
     @Group("a")
     public void writerA(Vars vars) {
         vars.a++;
     }
 
-    @GenerateMicroBenchmark
+    @Benchmark
     @Group("a")
     public void writerB(Vars vars) {
         vars.b++;
